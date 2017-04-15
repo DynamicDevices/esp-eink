@@ -1,0 +1,88 @@
+CC user/stdout.c
+In file included from /data_drive/esp8266/ESP8266_NONOS_SDK/include/ets_sys.h:29:0,
+                 from include/espmissingincludes.h:4,
+                 from user/stdout.c:13:
+user/stdout.c: In function 'stdoutInit':
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/stdout.c:35:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0TXD_U, FUNC_U0TXD);
+  ^
+CC user/config.c
+CC user/io.c
+In file included from /data_drive/esp8266/ESP8266_NONOS_SDK/include/ets_sys.h:29:0,
+                 from include/espmissingincludes.h:4,
+                 from user/io.c:1:
+user/io.c: In function 'ioInit':
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/io.c:166:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO2_U, FUNC_GPIO2);
+  ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/io.c:167:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO5_U, FUNC_GPIO5);
+  ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/io.c:168:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO4_U, FUNC_GPIO4);
+  ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/io.c:169:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTDI_U, FUNC_GPIO12);
+  ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/io.c:174:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTCK_U, 2);
+  ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:273:38: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+                                      &  (~(PERIPHS_IO_MUX_FUNC<<PERIPHS_IO_MUX_FUNC_S))  \
+                                      ^
+/data_drive/esp8266/ESP8266_NONOS_SDK/include/eagle_soc.h:69:98: note: in definition of macro 'WRITE_PERI_REG'
+ #define WRITE_PERI_REG(addr, val) (*((volatile uint32_t *)ETS_UNCACHED_ADDR(addr))) = (uint32_t)(val)
+                                                                                                  ^
+user/io.c:175:2: note: in expansion of macro 'PIN_FUNC_SELECT'
+  PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTMS_U, 2);
+  ^
+CC user/eink.c
+CC user/httpdespfs.c
+CC user/user_main.c
+CC user/httpdclient.c
+CC user/espfs.c
+CC user/cgiwifi.c
+CC user/heatshrink_decoder.c
+CC user/httpd.c
+AR build/einkdisp_app.a
+LD build/einkdisp.out
+FW firmware/0x00000.bin
+
+FW firmware/0x40000.bin
+

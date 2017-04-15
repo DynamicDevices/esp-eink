@@ -12,17 +12,22 @@ BUILD_BASE	= build
 FW_BASE		= firmware
 
 # Base directory for the compiler
-XTENSA_TOOLS_ROOT ?= /opt/Espressif/crosstool-NG/builds/xtensa-lx106-elf/bin
+#XTENSA_TOOLS_ROOT ?= /opt/Espressif/crosstool-NG/builds/xtensa-lx106-elf/bin
+XTENSA_TOOLS_ROOT ?= /data_drive/esp8266/esp-open-sdk/xtensa-lx106-elf/bin
 
 #Extra Tensilica includes from the ESS VM
-SDK_EXTRA_INCLUDES ?= /opt/Espressif/include
+#SDK_EXTRA_INCLUDES ?= /opt/Espressif/include
+SDK_EXTRA_INCLUDES ?= /data_drive/esp8266/ESP8266_NONOS_SDK/include
+#SDK_EXTRA_INCLUDES ?= /data_drive/esp8266/ESP8266_RTOS_SDK/include/espressif
 SDK_EXTRA_LIBS ?= /opt/Espressif/arch/lib
 
 # base directory of the ESP8266 SDK package, absolute
-SDK_BASE	?= /opt/Espressif/ESP8266_SDK
+#SDK_BASE	?= /opt/Espressif/ESP8266_SDK
+SDK_BASE	?= /data_drive/esp8266/ESP8266_NONOS_SDK
 
 #Esptool.py path and port
-ESPTOOL		?= esptool
+#ESPTOOL		?= esptool
+ESPTOOL                 ?= /data_drive/esp8266/esptool/esptool
 ESPPORT		?= /dev/ttyUSB0
 #ESPDELAY indicates seconds to wait between flashing the two binary images
 ESPDELAY	?= 3
@@ -40,10 +45,14 @@ EXTRA_INCDIR	= include \
 		$(SDK_EXTRA_INCLUDES)
 
 # libraries used in this project, mainly provided by the SDK
-LIBS		= c gcc hal phy pp net80211 wpa main lwip
+#LIBS		= c gcc hal phy pp net80211 wpa main lwip
+LIBS = c gcc hal pp phy net80211 lwip wpa pwm upgrade main ssl crypto
 
 # compiler flags using during compilation of source files
-CFLAGS		= -Os -ggdb -std=c99 -Werror -Wpointer-arith -Wundef -Wall -Wl,-EL -fno-inline-functions \
+#CFLAGS		= -Os -ggdb -std=c99 -Werror -Wpointer-arith -Wundef -Wall -Wl,-EL -fno-inline-functions \
+#		-nostdlib -mlongcalls -mtext-section-literals  -D__ets__ -DICACHE_FLASH \
+#		-Wno-address
+CFLAGS		= -Os -ggdb -std=c99 -Wpointer-arith -Wundef -Wall -Wl,-EL -fno-inline-functions \
 		-nostdlib -mlongcalls -mtext-section-literals  -D__ets__ -DICACHE_FLASH \
 		-Wno-address
 

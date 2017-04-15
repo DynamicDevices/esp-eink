@@ -14,6 +14,9 @@ static ETSTimer einkTimer;
 static EinkNeedDataCb *needDataCb=NULL;
 static EinkDoneCb *doneCb=NULL;
 
+// AJL
+#define os_update_cpu_frequency ets_update_cpu_frequency
+
 #define INK_STARTUP 0
 #define INK_VSTART 1
 #define INK_HSEND 2
